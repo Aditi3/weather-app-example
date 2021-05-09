@@ -17,10 +17,10 @@ class EnterCityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cityTextField.delegate = self
-        performAppLaunchAnimation()
+        performAppNameLabelAnimation()
     }
     
-    func performAppLaunchAnimation() {
+    func performAppNameLabelAnimation() {
         let appName = "DailyWeather"
         for letter in appName {
             Timer.scheduledTimer(withTimeInterval: 0.1 * index, repeats: false) { timer in
@@ -30,9 +30,7 @@ class EnterCityViewController: UIViewController {
         }
     }
     
-    @IBAction func buttonGoTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToWeather", sender: self)
-    }
+    // MARK: Segue Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToWeather" {
@@ -40,8 +38,16 @@ class EnterCityViewController: UIViewController {
                 weatherVC.cityName = cityTextField.text
             }
         }
-    }    
+    }
+    
+    // MARK: Actions
+
+    @IBAction func buttonGoTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToWeather", sender: self)
+    }
 }
+
+// MARK: - UITextFieldDelegate
 
 extension EnterCityViewController: UITextFieldDelegate {
     

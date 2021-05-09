@@ -36,6 +36,8 @@ class CityWeatherViewController: UIViewController {
     }
 }
 
+// MARK: - WeatherManagerDelegate
+
 extension CityWeatherViewController: WeatherManagerDelegate {
    
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
