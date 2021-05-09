@@ -25,6 +25,10 @@ struct WeatherModel {
         return String(format: "%.1f", temperature)
     }
     
+    var weatherDescription: String {
+        return weatherDesc.capitalizingFirstLetter()
+    }
+    
     var weatherConditionName: String {
         switch weatherId {
         case 200...232:
@@ -45,6 +49,14 @@ struct WeatherModel {
             return "cloud"
         }
     }
-    
-   
+}
+
+extension String {
+    func capitalizingFirstLetter() -> String {
+        return prefix(1).capitalized + dropFirst()
+    }
+
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
 }

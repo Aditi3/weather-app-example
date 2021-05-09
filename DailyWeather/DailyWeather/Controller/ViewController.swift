@@ -38,9 +38,10 @@ class ViewController: UIViewController, WeatherManagerDelegate {
             
             self.temperatureLabel.text = weather.temperatureString + "°"
             self.cityLabel.text = weather.cityName
-            self.weatherDesc.text = weather.weatherDesc
+            self.weatherDesc.text = weather.weatherDescription
             self.windLabel.text = weather.windString + "km/h"
             self.humidityLabel.text = weather.humidity.description + "%"
+            self.pressureLabel.text = weather.pressure.description + "mb"
             self.conditionImageView.image = UIImage(systemName: weather.weatherConditionName)
         }
     }

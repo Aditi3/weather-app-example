@@ -37,8 +37,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="VMB-Fc-xIc">
-                                <rect key="frame" x="20" y="399" width="78.5" height="98"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VMB-Fc-xIc">
+                                <rect key="frame" x="20" y="396" width="78.5" height="104"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="IPZ-v5-hZ9">
                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="28"/>
@@ -62,10 +62,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nWx-HI-aVl">
-                                        <rect key="frame" x="0.0" y="35" width="78.5" height="28"/>
+                                        <rect key="frame" x="0.0" y="38" width="78.5" height="28"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-IZ-QUd">
-                                                <rect key="frame" x="0.0" y="-0.5" width="28" height="28.5"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.compress.vertical" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-IZ-QUd">
+                                                <rect key="frame" x="0.0" y="-2" width="28" height="31"/>
                                                 <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="KdB-IZ-QUd" secondAttribute="height" id="LIy-Tg-dJW"/>
@@ -80,7 +80,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="WCs-62-DHb">
-                                        <rect key="frame" x="0.0" y="70" width="78.5" height="28"/>
+                                        <rect key="frame" x="0.0" y="76" width="78.5" height="28"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YUy-8m-zox">
                                                 <rect key="frame" x="0.0" y="0.5" width="28" height="27"/>
@@ -156,7 +156,7 @@
     <resources>
         <image name="bg" width="784" height="1329"/>
         <image name="drop" catalog="system" width="101" height="128"/>
-        <image name="sun.max" catalog="system" width="128" height="124"/>
+        <image name="rectangle.compress.vertical" catalog="system" width="122" height="128"/>
         <image name="wind" catalog="system" width="128" height="101"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
