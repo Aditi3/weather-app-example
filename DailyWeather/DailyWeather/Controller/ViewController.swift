@@ -17,6 +17,7 @@ class ViewController: UIViewController, WeatherManagerDelegate {
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var weatherDesc: UILabel!
     
+    var cityName: String?
     var weatherManager = WeatherManager()
     
     override func viewDidLoad() {
