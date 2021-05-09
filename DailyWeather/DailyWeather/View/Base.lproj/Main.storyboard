@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter City Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVD-da-6yM">
-                                <rect key="frame" x="80.5" y="355.5" width="253.5" height="46.5"/>
+                                <rect key="frame" x="80.5" y="356.5" width="253.5" height="46.5"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -44,23 +44,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M02-Eq-8WF">
-                                <rect key="frame" x="22" y="426" width="370" height="44"/>
+                                <rect key="frame" x="22" y="427" width="370" height="42.5"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <color key="tintColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="CVV-ZT-Vvt"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="v5l-dG-VTj" id="w99-Ng-GZG"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzF-qh-oaJ">
-                                <rect key="frame" x="136" y="494" width="142" height="73"/>
+                                <rect key="frame" x="136" y="493.5" width="142" height="53"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
-                                <inset key="contentEdgeInsets" minX="54" minY="20" maxX="54" maxY="20"/>
+                                <inset key="contentEdgeInsets" minX="54" minY="10" maxX="54" maxY="10"/>
                                 <state key="normal" title="Go">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
@@ -114,11 +111,11 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIP-0H-Kce">
-                                <rect key="frame" x="375.5" y="409" width="18.5" height="78"/>
+                                <rect key="frame" x="378.5" y="415" width="15.5" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArJ-x5-9so">
-                                        <rect key="frame" x="0.0" y="0.0" width="18.5" height="78"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="15.5" height="66"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="48"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>

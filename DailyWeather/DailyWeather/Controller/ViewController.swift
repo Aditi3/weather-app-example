@@ -28,7 +28,7 @@ class ViewController: UIViewController, WeatherManagerDelegate {
     }
     
     func requestCityWeatherDetails() {
-        weatherManager.fetchWeather(cityName: "Alaska")
+        weatherManager.fetchWeather(cityName: self.cityName ?? "Alaska")
     }
     
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
