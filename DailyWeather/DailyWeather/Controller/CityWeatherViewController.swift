@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CityWeatherViewController: UIViewController, WeatherManagerDelegate {
+class CityWeatherViewController: UIViewController {
     
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -29,16 +29,17 @@ class CityWeatherViewController: UIViewController, WeatherManagerDelegate {
     
     func requestCityWeatherDetails() {
         if self.cityName == "" {
-            weatherManager.fetchWeather(cityName: "Jaipur")
+            weatherManager.fetchWeather(cityName: K.defaultCity)
         } else {
-            weatherManager.fetchWeather(cityName: self.cityName ?? "Jaipur")
+            weatherManager.fetchWeather(cityName: self.cityName ?? K.defaultCity)
         }
     }
-    
+}
+
+extension CityWeatherViewController: WeatherManagerDelegate {
+   
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
-        
         let weather = weather as WeatherModel
-        
         DispatchQueue.main.async {
             
             self.temperatureLabel.text = weather.temperatureString + "°"
@@ -54,6 +55,5 @@ class CityWeatherViewController: UIViewController, WeatherManagerDelegate {
     func didFailWithError(error: Error) {
         print("Error handling data \(error)")
     }
-    
 }
 

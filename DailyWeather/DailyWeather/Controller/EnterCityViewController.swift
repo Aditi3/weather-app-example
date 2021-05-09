@@ -12,10 +12,22 @@ class EnterCityViewController: UIViewController {
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var appNameLabel: UILabel!
     
+    var index = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        cityTextField.layer.cornerRadius = 3.0
         cityTextField.delegate = self
+        performAppLaunchAnimation()
+    }
+    
+    func performAppLaunchAnimation() {
+        let appName = "DailyWeather"
+        for letter in appName {
+            Timer.scheduledTimer(withTimeInterval: 0.1 * index, repeats: false) { timer in
+                self.appNameLabel.text?.append(letter)
+            }
+            self.index += 1
+        }
     }
     
     @IBAction func buttonGoTapped(_ sender: Any) {
