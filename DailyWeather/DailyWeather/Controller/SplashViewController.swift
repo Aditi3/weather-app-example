@@ -18,9 +18,7 @@ class SplashViewController: UIViewController {
         performAppLaunchAnimation()
     }
     
-    
     func performAppLaunchAnimation() {
-        
         let appName = "🔆 Daily Weather"
         for letter in appName {
             Timer.scheduledTimer(withTimeInterval: 0.2 * index, repeats: false) { timer in
@@ -28,6 +26,5 @@ class SplashViewController: UIViewController {
             }
             self.index += 1
         }
-        
     }
 }

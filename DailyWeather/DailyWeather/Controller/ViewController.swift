@@ -18,19 +18,19 @@ class ViewController: UIViewController, WeatherManagerDelegate {
     @IBOutlet weak var weatherDesc: UILabel!
     
     var weatherManager = WeatherManager()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        weatherManager.delegate = self
         requestCityWeatherDetails()
     }
     
     func requestCityWeatherDetails() {
-        weatherManager.delegate = self
-        weatherManager.fetchWeather(cityName: "Berlin")
+        weatherManager.fetchWeather(cityName: "Alaska")
     }
     
-    func didUpdateWeather(weather: WeatherModel) {
+    func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
         
         let weather = weather as WeatherModel
         
@@ -44,6 +44,10 @@ class ViewController: UIViewController, WeatherManagerDelegate {
             self.conditionImageView.image = UIImage(systemName: weather.weatherConditionName)
         }
     }
-
+    
+    func didFailWithError(error: Error) {
+        print("Error handling data \(error)")
+    }
+    
 }
 
