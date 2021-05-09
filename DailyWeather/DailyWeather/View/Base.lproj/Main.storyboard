@@ -120,6 +120,12 @@
                             <constraint firstItem="H31-M6-ECL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="zMX-XY-DOz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PBL-Vx-TW8"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="H31-M6-ECL" id="2eV-zj-KSC"/>
+                        <outlet property="conditionImageView" destination="9OC-cU-47G" id="t0f-rY-Cpt"/>
+                        <outlet property="temperatureLabel" destination="ArJ-x5-9so" id="OT8-TF-HLq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
