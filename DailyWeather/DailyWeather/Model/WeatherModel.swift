@@ -5,6 +5,8 @@
 //  Created by Aditi Agrawal on 09/05/21.
 //
 
+import Foundation
+
 struct WeatherModel {
     
     let weatherId: Int
@@ -13,6 +15,11 @@ struct WeatherModel {
     let windSpeed: Double
     let pressure: Int
     let humidity: Int
+    let weatherDesc: String
+    
+    var windString: String {
+        return String(format: "%.f", round(windSpeed))
+    }
     
     var temperatureString: String {
         return String(format: "%.1f", temperature)
