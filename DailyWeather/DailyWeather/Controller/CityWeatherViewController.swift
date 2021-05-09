@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, WeatherManagerDelegate {
+class CityWeatherViewController: UIViewController, WeatherManagerDelegate {
     
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -28,7 +28,11 @@ class ViewController: UIViewController, WeatherManagerDelegate {
     }
     
     func requestCityWeatherDetails() {
-        weatherManager.fetchWeather(cityName: self.cityName ?? "Alaska")
+        if self.cityName == "" {
+            weatherManager.fetchWeather(cityName: "Jaipur")
+        } else {
+            weatherManager.fetchWeather(cityName: self.cityName ?? "Jaipur")
+        }
     }
     
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {

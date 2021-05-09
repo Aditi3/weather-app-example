@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-1900" y="62"/>
         </scene>
-        <!--Select City View Controller-->
+        <!--Enter City View Controller-->
         <scene sceneID="u9d-f8-2tU">
             <objects>
-                <viewController id="v5l-dG-VTj" customClass="SelectCityViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v5l-dG-VTj" customClass="EnterCityViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DSH-EE-smk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-1019" y="62"/>
         </scene>
-        <!--View Controller-->
+        <!--City Weather View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CityWeatherViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

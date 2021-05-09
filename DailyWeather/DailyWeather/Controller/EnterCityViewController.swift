@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SelectCityViewController: UIViewController {
+class EnterCityViewController: UIViewController {
     
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var appNameLabel: UILabel!
@@ -24,14 +24,14 @@ class SelectCityViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToWeather" {
-            if let weatherVC = segue.destination as? ViewController {
+            if let weatherVC = segue.destination as? CityWeatherViewController {
                 weatherVC.cityName = cityTextField.text
             }
         }
     }    
 }
 
-extension SelectCityViewController: UITextFieldDelegate {
+extension EnterCityViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
