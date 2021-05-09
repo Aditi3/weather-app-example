@@ -17,11 +17,17 @@ struct WeatherManager {
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     var delegate: WeatherManagerDelegate?
     
+    
+    // MARK: -  Prepare Request URL
+
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)&appid=\(K.weatherApiKey)"
         performRequest(with: urlString)
     }
     
+    
+    // MARK: -  Network Call
+
     func performRequest(with urlString: String) {
         // Create a URL
         guard let url = URL(string: urlString) else { return }
@@ -42,6 +48,8 @@ struct WeatherManager {
         // Start a task
         task.resume()
     }
+    
+    // MARK: -  Parsing JSON
     
     func parseJson(weatherData: Data) -> WeatherModel? {
         let decoder = JSONDecoder()
