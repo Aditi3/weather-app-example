@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-1875" y="62"/>
         </scene>
-        <!--Enter City View Controller-->
+        <!--City View Controller-->
         <scene sceneID="u9d-f8-2tU">
             <objects>
-                <viewController id="v5l-dG-VTj" customClass="EnterCityViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v5l-dG-VTj" customClass="CityViewController" customModule="DailyWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DSH-EE-smk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
