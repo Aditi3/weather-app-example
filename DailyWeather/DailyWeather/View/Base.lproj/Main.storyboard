@@ -230,12 +230,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="PBL-Vx-TW8"/>
                     <connections>
-                        <outlet property="cityLabel" destination="H31-M6-ECL" id="2eV-zj-KSC"/>
+                        <outlet property="cityNameLabel" destination="H31-M6-ECL" id="2eV-zj-KSC"/>
                         <outlet property="conditionImageView" destination="9OC-cU-47G" id="t0f-rY-Cpt"/>
                         <outlet property="humidityLabel" destination="o7b-Z1-bdJ" id="QWe-10-tQq"/>
                         <outlet property="pressureLabel" destination="LmS-RM-epi" id="ihE-1A-6ga"/>
                         <outlet property="temperatureLabel" destination="ArJ-x5-9so" id="OT8-TF-HLq"/>
-                        <outlet property="weatherDesc" destination="ofB-Tf-au7" id="Rb3-K9-2AL"/>
+                        <outlet property="weatherDescLabel" destination="ofB-Tf-au7" id="Rb3-K9-2AL"/>
                         <outlet property="windLabel" destination="1h2-Ec-GtB" id="pc9-PS-ok7"/>
                     </connections>
                 </viewController>
