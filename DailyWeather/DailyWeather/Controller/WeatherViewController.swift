@@ -16,6 +16,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var windLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var weatherDescLabel: UILabel!
+    @IBOutlet weak var footerImage: UIImageView!
     
     var cityName: String?
     private var weatherManager = WeatherManager()
@@ -60,6 +61,8 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.humidityLabel.text = weather.humidity.description + "%"
             self.pressureLabel.text = weather.pressure.description + "mb"
             self.conditionImageView.image = UIImage(systemName: weather.weatherConditionName)
+            self.footerImage.image = UIImage(named: weather.weatherConditionName)
+            
         }
     }
     
