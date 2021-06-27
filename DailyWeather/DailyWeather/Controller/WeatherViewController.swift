@@ -35,7 +35,7 @@ class WeatherViewController: UIViewController {
     
     func requestCityWeatherDetails() {
         if self.cityName == "" {
-            weatherManager.fetchWeather(cityName: K.defaultCity)
+            weatherManager.fetchWeather(cityName: K.DefaultCity)
         } else {
             weatherManager.fetchWeather(cityName: self.cityName ?? K.DefaultCity)
         }
