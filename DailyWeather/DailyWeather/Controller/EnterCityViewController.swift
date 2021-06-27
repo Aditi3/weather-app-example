@@ -41,7 +41,7 @@ class EnterCityViewController: UIViewController {
     }
     
     // MARK: Actions
-
+    
     @IBAction func buttonGoTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "goToWeather", sender: self)
     }
