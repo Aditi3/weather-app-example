@@ -28,13 +28,6 @@
 			remoteGlobalIDString = 4977E5F72646E02C00044B9E;
 			remoteInfo = DailyWeather;
 		};
-		4977E61A2646E02F00044B9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4977E5F02646E02C00044B9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4977E5F72646E02C00044B9E;
-			remoteInfo = DailyWeather;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +46,6 @@
 		4977E60E2646E02F00044B9E /* DailyWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4977E6122646E02F00044B9E /* DailyWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherTests.swift; sourceTree = "<group>"; };
 		4977E6142646E02F00044B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4977E6192646E02F00044B9E /* DailyWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +57,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4977E60B2646E02F00044B9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4977E6162646E02F00044B9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,7 +108,6 @@
 			children = (
 				4977E5F82646E02C00044B9E /* DailyWeather.app */,
 				4977E60E2646E02F00044B9E /* DailyWeatherTests.xctest */,
-				4977E6192646E02F00044B9E /* DailyWeatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,24 +189,6 @@
 			productReference = 4977E60E2646E02F00044B9E /* DailyWeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4977E6182646E02F00044B9E /* DailyWeatherUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4977E6282646E02F00044B9E /* Build configuration list for PBXNativeTarget "DailyWeatherUITests" */;
-			buildPhases = (
-				4977E6152646E02F00044B9E /* Sources */,
-				4977E6162646E02F00044B9E /* Frameworks */,
-				4977E6172646E02F00044B9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4977E61B2646E02F00044B9E /* PBXTargetDependency */,
-			);
-			name = DailyWeatherUITests;
-			productName = DailyWeatherUITests;
-			productReference = 4977E6192646E02F00044B9E /* DailyWeatherUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -237,10 +203,6 @@
 						CreatedOnToolsVersion = 12.5;
 					};
 					4977E60D2646E02F00044B9E = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = 4977E5F72646E02C00044B9E;
-					};
-					4977E6182646E02F00044B9E = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 4977E5F72646E02C00044B9E;
 					};
@@ -261,7 +223,6 @@
 			targets = (
 				4977E5F72646E02C00044B9E /* DailyWeather */,
 				4977E60D2646E02F00044B9E /* DailyWeatherTests */,
-				4977E6182646E02F00044B9E /* DailyWeatherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,13 +239,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4977E60C2646E02F00044B9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4977E6172646E02F00044B9E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,13 +270,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4977E6152646E02F00044B9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -330,11 +277,6 @@
 			isa = PBXTargetDependency;
 			target = 4977E5F72646E02C00044B9E /* DailyWeather */;
 			targetProxy = 4977E60F2646E02F00044B9E /* PBXContainerItemProxy */;
-		};
-		4977E61B2646E02F00044B9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4977E5F72646E02C00044B9E /* DailyWeather */;
-			targetProxy = 4977E61A2646E02F00044B9E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -546,44 +488,6 @@
 			};
 			name = Release;
 		};
-		4977E6292646E02F00044B9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DailyWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.DailyWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyWeather;
-			};
-			name = Debug;
-		};
-		4977E62A2646E02F00044B9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DailyWeatherUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aditi.DailyWeatherUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DailyWeather;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -610,15 +514,6 @@
 			buildConfigurations = (
 				4977E6262646E02F00044B9E /* Debug */,
 				4977E6272646E02F00044B9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4977E6282646E02F00044B9E /* Build configuration list for PBXNativeTarget "DailyWeatherUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4977E6292646E02F00044B9E /* Debug */,
-				4977E62A2646E02F00044B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
