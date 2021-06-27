@@ -3,4 +3,70 @@
    uuid = "A7F2F8AC-0620-4623-B889-789AD3654DC0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27481527-1ECA-447C-AFAA-DF5AD1EA73D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyWeather/Model/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC729F2B-F107-4D4D-B7A8-733AF28BC292"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DailyWeather/Model/WeatherManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BC729F2B-F107-4D4D-B7A8-733AF28BC292 - 6cab07882782a141"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DailyWeather.WeatherManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "DailyWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aditi/repo/Personal/weather-app-example/DailyWeather/DailyWeather/Model/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "459">
+               </Location>
+               <Location
+                  uuid = "BC729F2B-F107-4D4D-B7A8-733AF28BC292 - 5ef8de032b4baade"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DailyWeather.WeatherManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "DailyWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aditi/repo/Personal/weather-app-example/DailyWeather/DailyWeather/Model/WeatherManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "307">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
