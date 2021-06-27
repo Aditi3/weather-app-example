@@ -37,7 +37,7 @@ class CityViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == K.weatherPage {
-            if let weatherVC = segue.destination as? CityWeatherViewController {
+            if let weatherVC = segue.destination as? WeatherViewController {
                 /// This passes the city name to the Weather View Controller
                 weatherVC.cityName = cityTextField.text
             }
