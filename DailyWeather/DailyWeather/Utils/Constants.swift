@@ -8,6 +8,7 @@
 struct K {
     
     static let AppName = "DailyWeather"
+    static let HomePageTitle = "Today's Weather"
     static let DefaultCity = "Mumbai"
     
     struct API {

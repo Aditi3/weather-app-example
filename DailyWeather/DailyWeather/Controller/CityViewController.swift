@@ -24,7 +24,7 @@ class CityViewController: UIViewController {
     }
     
     func performAppNameLabelAnimation() {
-        for letter in K.AppName {
+        for letter in K.HomePageTitle {
             Timer.scheduledTimer(withTimeInterval: 0.1 * index, repeats: false) { timer in
                 /// Append the App Name Letters
                 self.appNameLabel.text?.append(letter)
@@ -32,6 +32,7 @@ class CityViewController: UIViewController {
             self.index += 1
         }
     }
+    
     
     // MARK: - Segue Methods
     
@@ -43,6 +44,7 @@ class CityViewController: UIViewController {
             }
         }
     }
+    
     
     // MARK: - Actions
     

@@ -19,13 +19,21 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy-woman" translatesAutoresizingMaskIntoConstraints="NO" id="D21-I6-0R0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJz-KO-LXE">
+                                <rect key="frame" x="45.5" y="507.5" width="323.5" height="60.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vJz-KO-LXE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.2" id="88i-6q-Jdu"/>
                             <constraint firstItem="D21-I6-0R0" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="A7G-32-PFX"/>
                             <constraint firstAttribute="bottom" secondItem="D21-I6-0R0" secondAttribute="bottom" id="RwM-1i-N6Q"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="D21-I6-0R0" secondAttribute="trailing" id="Z6N-1W-NvB"/>
+                            <constraint firstItem="vJz-KO-LXE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="u9Y-6F-Zub"/>
                             <constraint firstItem="D21-I6-0R0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="uGY-EO-k7t"/>
                         </constraints>
                     </view>

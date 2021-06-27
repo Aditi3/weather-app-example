@@ -16,14 +16,14 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var windLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var weatherDescLabel: UILabel!
-    @IBOutlet weak var footerImage: UIImageView!
+    @IBOutlet weak var footerImageView: UIImageView!
     
     var cityName: String?
     private var weatherManager = WeatherManager()
     
     
     // MARK: - Controller Life Cycle Methods
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,6 +31,7 @@ class WeatherViewController: UIViewController {
         /// Request to fetch the Weather Details
         requestCityWeatherDetails()
     }
+    
     
     // MARK: - Request Weather Details for the City
     
@@ -42,6 +43,7 @@ class WeatherViewController: UIViewController {
         }
     }
 }
+
 
 // MARK: - WeatherManagerDelegate
 
@@ -61,8 +63,7 @@ extension WeatherViewController: WeatherManagerDelegate {
             self.humidityLabel.text = weather.humidity.description + "%"
             self.pressureLabel.text = weather.pressure.description + "mb"
             self.conditionImageView.image = UIImage(systemName: weather.weatherConditionName)
-            self.footerImage.image = UIImage(named: weather.weatherConditionName)
-            
+            self.footerImageView.image = UIImage(named: weather.weatherConditionName)
         }
     }
     
