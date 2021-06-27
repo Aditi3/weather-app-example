@@ -2,8 +2,14 @@
 
 An application showcasing the weather for a entered city.
 
-# Screenshots
+# Features
 
+- On the Home page, enter the city name  
+- Fetch and Parse JSON for [RESTful API](https://openweathermap.org/api)
+- On the Weather Detail Page, shows the City name, weather description, temperature, humidity, wind and precipitation
+- Adds Logging, `// MARK:`, and Comments 
+
+# Screenshots
 
 <p float="left"> 
 <img src="/Documentation/Launch-Dark.png" width="140">
