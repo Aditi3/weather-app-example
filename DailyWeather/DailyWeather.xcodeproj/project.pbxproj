@@ -18,7 +18,6 @@
 		4977E6032646E02C00044B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4977E6012646E02C00044B9E /* Main.storyboard */; };
 		4977E6052646E02F00044B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4977E6042646E02F00044B9E /* Assets.xcassets */; };
 		4977E6132646E02F00044B9E /* DailyWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977E6122646E02F00044B9E /* DailyWeatherTests.swift */; };
-		4977E61E2646E02F00044B9E /* DailyWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4977E61D2646E02F00044B9E /* DailyWeatherUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		4977E6122646E02F00044B9E /* DailyWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherTests.swift; sourceTree = "<group>"; };
 		4977E6142646E02F00044B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4977E6192646E02F00044B9E /* DailyWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4977E61D2646E02F00044B9E /* DailyWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherUITests.swift; sourceTree = "<group>"; };
-		4977E61F2646E02F00044B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +114,6 @@
 			children = (
 				4977E5FA2646E02C00044B9E /* DailyWeather */,
 				4977E6112646E02F00044B9E /* DailyWeatherTests */,
-				4977E61C2646E02F00044B9E /* DailyWeatherUITests */,
 				4977E5F92646E02C00044B9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -153,15 +149,6 @@
 				4977E6142646E02F00044B9E /* Info.plist */,
 			);
 			path = DailyWeatherTests;
-			sourceTree = "<group>";
-		};
-		4977E61C2646E02F00044B9E /* DailyWeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4977E61D2646E02F00044B9E /* DailyWeatherUITests.swift */,
-				4977E61F2646E02F00044B9E /* Info.plist */,
-			);
-			path = DailyWeatherUITests;
 			sourceTree = "<group>";
 		};
 		4980E20C268823FC00B04BFF /* App */ = {
@@ -333,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4977E61E2646E02F00044B9E /* DailyWeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
