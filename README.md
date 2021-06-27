@@ -13,6 +13,6 @@ An application showcasing the weather for a entered city.
 
 <p float="left"> 
 <img src="/Documentation/Launch-Light.png" width="140"> 
-<img src="/Documentation/Home.png" width="140">
-<img src="/Documentation/Weather.png" width="140">
+<img src="/Documentation/Home-Light.png" width="140">
+<img src="/Documentation/Weather-Light.png" width="140">
 </p>
