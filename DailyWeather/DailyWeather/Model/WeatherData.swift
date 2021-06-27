@@ -7,6 +7,9 @@
 
 import Foundation
 
+
+// MARK: - Weather Datum
+
 struct WeatherData: Codable {
     let name: String
     let main: Main
@@ -14,17 +17,31 @@ struct WeatherData: Codable {
     let weather: [Weather]
 }
 
+
+// MARK: - Main
 struct Main: Codable {
     let temp: Double
-    let humidity: Int
-    let pressure: Int
+    let pressure, humidity: Int
 }
+
+
+// MARK: - Wind
 
 struct Wind: Codable {
     let speed: Double
 }
 
+
+// MARK: - Weather
+
 struct Weather: Codable {
     let id: Int
-    let description: String
+    let weatherDescription: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case weatherDescription = "description"
+    }
 }
+
+

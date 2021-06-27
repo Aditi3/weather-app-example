@@ -15,20 +15,24 @@ struct WeatherModel {
     let windSpeed: Double
     let pressure: Int
     let humidity: Int
-    let weatherDesc: String
+    let description: String
     
-    var windString: String {
+    /// Returns Wind Speed in String format
+    var windSpeedString: String {
         return String(format: "%.f", round(windSpeed))
     }
     
+    /// Returns Temperature in String format
     var temperatureString: String {
         return String(format: "%.1f", temperature)
     }
     
+    /// Returns Weather Description in String format
     var weatherDescription: String {
-        return weatherDesc.capitalizingFirstLetter()
+        return description.capitalizingFirstLetter()
     }
     
+    /// Returns Weather Condition Name
     var weatherConditionName: String {
         switch weatherId {
         case 200...232:
@@ -51,11 +55,14 @@ struct WeatherModel {
     }
 }
 
+
+// MARK: - String Extension
+
 extension String {
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
     }
-
+    
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
