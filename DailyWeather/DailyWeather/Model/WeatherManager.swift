@@ -69,7 +69,7 @@ struct WeatherManager {
                                        windSpeed: decodedData.wind.speed,
                                        pressure: decodedData.main.pressure,
                                        humidity: decodedData.main.humidity,
-                                       weatherDesc: decodedData.weather[0].description)
+                                       description: decodedData.weather[0].weatherDescription)
             return weather
         } catch {
             /// prints the parsing error and calls protocol `didFailWithError`

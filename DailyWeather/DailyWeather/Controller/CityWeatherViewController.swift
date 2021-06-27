@@ -56,7 +56,7 @@ extension CityWeatherViewController: WeatherManagerDelegate {
             self.temperatureLabel.text = weather.temperatureString + "°"
             self.cityNameLabel.text = weather.cityName
             self.weatherDescLabel.text = weather.weatherDescription
-            self.windLabel.text = weather.windString + "km/h"
+            self.windLabel.text = weather.windSpeed + "km/h"
             self.humidityLabel.text = weather.humidity.description + "%"
             self.pressureLabel.text = weather.pressure.description + "mb"
             self.conditionImageView.image = UIImage(systemName: weather.weatherConditionName)
