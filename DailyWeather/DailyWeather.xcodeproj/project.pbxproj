@@ -137,9 +137,8 @@
 		4977E5FA2646E02C00044B9E /* DailyWeather */ = {
 			isa = PBXGroup;
 			children = (
-				4977E5FB2646E02C00044B9E /* AppDelegate.swift */,
-				494A09CE2647E318002B93CA /* Constants.swift */,
-				4977E5FD2646E02C00044B9E /* SceneDelegate.swift */,
+				4980E20C268823FC00B04BFF /* App */,
+				4980E20D2688240900B04BFF /* Utils */,
 				494A09C72647A627002B93CA /* View */,
 				494A09C62647A614002B93CA /* Controller */,
 				494A09C52647A60C002B93CA /* Model */,
@@ -165,6 +164,23 @@
 				4977E61F2646E02F00044B9E /* Info.plist */,
 			);
 			path = DailyWeatherUITests;
+			sourceTree = "<group>";
+		};
+		4980E20C268823FC00B04BFF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4977E5FB2646E02C00044B9E /* AppDelegate.swift */,
+				4977E5FD2646E02C00044B9E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4980E20D2688240900B04BFF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				494A09CE2647E318002B93CA /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
