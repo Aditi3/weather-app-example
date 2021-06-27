@@ -6,9 +6,17 @@
 //
 
 struct K {
-    static let weatherApiKey = "64aca4e110e5a524cc13faaaf78d909f"
-    static let defaultCity = "Mumbai"
-    static let appName = "DailyWeather"
-    static let weatherPage = "goToWeather"
-
+    
+    static let AppName = "DailyWeather"
+    static let DefaultCity = "Mumbai"
+    
+    struct API {
+        static let weatherApiKey = "64aca4e110e5a524cc13faaaf78d909f"
+        static let weatherApiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
+    }
+    
+    struct SegueIdentifier {
+        static let weatherPage = "goToWeather"
+    }
+    
 }

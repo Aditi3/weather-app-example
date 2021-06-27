@@ -24,7 +24,7 @@ class CityViewController: UIViewController {
     }
     
     func performAppNameLabelAnimation() {
-        for letter in K.appName {
+        for letter in K.AppName {
             Timer.scheduledTimer(withTimeInterval: 0.1 * index, repeats: false) { timer in
                 /// Append the App Name Letters
                 self.appNameLabel.text?.append(letter)
@@ -36,7 +36,7 @@ class CityViewController: UIViewController {
     // MARK: - Segue Methods
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == K.weatherPage {
+        if segue.identifier == K.SegueIdentifier.weatherPage {
             if let weatherVC = segue.destination as? WeatherViewController {
                 /// This passes the city name to the Weather View Controller
                 weatherVC.cityName = cityTextField.text
@@ -47,7 +47,7 @@ class CityViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func buttonGoTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: K.weatherPage, sender: self)
+        self.performSegue(withIdentifier: K.SegueIdentifier.weatherPage, sender: self)
     }
 }
 

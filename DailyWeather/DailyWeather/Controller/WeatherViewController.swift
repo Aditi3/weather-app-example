@@ -37,7 +37,7 @@ class WeatherViewController: UIViewController {
         if self.cityName == "" {
             weatherManager.fetchWeather(cityName: K.defaultCity)
         } else {
-            weatherManager.fetchWeather(cityName: self.cityName ?? K.defaultCity)
+            weatherManager.fetchWeather(cityName: self.cityName ?? K.DefaultCity)
         }
     }
 }
@@ -52,7 +52,7 @@ extension WeatherViewController: WeatherManagerDelegate {
     func didUpdateWeather(weatherManager: WeatherManager, weather: WeatherModel) {
         let weather = weather as WeatherModel
         DispatchQueue.main.async {
-            /// Set View Elements, temperature, city name, description, humidity,  pressure and condition Image
+            /// Update View Elements, temperature, city name, description, humidity,  pressure and condition Image
             self.temperatureLabel.text = weather.temperatureString + "°"
             self.cityNameLabel.text = weather.cityName
             self.weatherDescLabel.text = weather.weatherDescription
